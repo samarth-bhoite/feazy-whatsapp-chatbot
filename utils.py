@@ -1,7 +1,7 @@
 import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "feazy-chatbot-for-college-pfqk-5c48c787f614.json"
 
-import dialogflow
+from google.cloud import dialogflow_v2beta1 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
 PROJECT_ID = "feazy-chatbot-for-college-pfqk"
 

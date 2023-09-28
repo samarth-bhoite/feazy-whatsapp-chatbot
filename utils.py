@@ -1,9 +1,9 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "feazy-chatbot-for-college-pfqk-5c48c787f614.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "jokes-ylno-99926883547f.json"
 
 from google.cloud import dialogflow_v2beta1 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "feazy-chatbot-for-college-pfqk"
+PROJECT_ID = "jokes-ylno"
 
 def detect_intent_from_text(text, session_id, language_code='en'):
     session = dialogflow_session_client.session_path(PROJECT_ID, session_id)
